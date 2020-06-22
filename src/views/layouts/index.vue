@@ -1,10 +1,10 @@
 <template>
   <div class="app-container">
     <div class="layout-content">
-      <keep-alive v-if="$route.meta.keepAlive">
+      <!-- <keep-alive v-if="$route.meta.keepAlive">
         <router-view></router-view>
-      </keep-alive>
-      <router-view v-else></router-view>
+      </keep-alive> -->
+      <router-view></router-view>
     </div>
     <div class="layout-footer">
       <TabBar :data="tabbars" @change="handleChange" />
@@ -43,6 +43,9 @@ export default {
     handleChange(v) {
       console.log('tab value:', v)
     }
+  },
+  mounted(){
+    console.log(this.$route)
   }
 }
 </script>

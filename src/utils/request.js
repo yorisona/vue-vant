@@ -20,9 +20,9 @@ service.interceptors.request.use(
         forbidClick: true
       })
     }
-    if (store.getters.token) {
-      config.headers['X-Token'] = ''
-    }
+    // if (store.getters.token) {
+      config.headers['X9-Token'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNzEwLCJ1c2VyX3Bob25lIjoiMTc3MTkxMTg3NjMiLCJ1c2VyX3JlYWxuYW1lIjoi6auY5paw5piOIiwic3RhdHVzIjowLCJsb2dpbmlwIjoiMTgzLjE1OC4xMy45NCIsInVwZGF0ZWRfYXQiOjE1OTI2NDE3NzksImxldmVsX2lkIjo3LCJhdXRoX2ZhY2UiOjAsImV4cCI6MTU5MjgzMTAzNCwiaXNzIjoiMTc3MTkxMTg3NjMifQ.d2noUTvCiGaskcsIoWfWgq9B1pwZ0dH-wmG70xqk7RI'
+    // }
     return config
   },
   error => {

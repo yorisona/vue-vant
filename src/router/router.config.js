@@ -5,7 +5,7 @@
 export const constantRouterMap = [
   {
     path: '/',
-    component: () => import('@/views/layouts/index'),
+    component: () => import('@/views/home/home'),
     redirect: '/home',
     meta: {
       title: '首页',
